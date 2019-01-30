@@ -78,7 +78,7 @@
         position: absolute;
         top: 0px;
         width: 100%;
-        height: 20%;
+        height: 80px;
     }
 
     #title{
@@ -139,7 +139,7 @@
         position: absolute;
         top: 0px;
         width: 100%;
-        height: 20%;
+        height: 80px;
         display: flex;
         border-bottom: 2px solid #333333;
     }
