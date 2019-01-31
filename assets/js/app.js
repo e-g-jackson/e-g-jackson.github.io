@@ -1,13 +1,13 @@
 var mainDiv = $('#mainDiv');
 var portfolioItems = [
     {'title': 'Our House!',
-    'url': 'https://nickila.github.io/Project_1/',
-    'repoUrl': 'https://github.com/nickila/Project_1.git',
+    'url': 'https://e-g-jackson.github.io/Our_House/',
+    'repoUrl': 'https://github.com/e-g-jackson/Our_House.git',
     'img':'assets/imgs/ourhouse.JPG',
     'text':'References the Google Civic API for information on local representatives. Also references the Google Geocoder API and Google Maps API to render the location of representatives\' offices.',
     },{'title': 'GGtrivia',
     'url': 'https://guarded-crag-98032.herokuapp.com/',
-    'repoUrl': 'https://github.com/aeronashbrook/gp2',
+    'repoUrl': 'https://github.com/e-g-jackson/GG_Trivia',
     'img': 'assets/imgs/GGTrivia.JPG',
     'text': 'A Trivia game that uses Sequelize to store and retrieve data from a database. This data includes a question bank, a leaderboard, and a submitted questions table for user-submitted questions pending approval.'
     },
@@ -45,9 +45,18 @@ var display = {
         var text = 'Erik Jackson is a future web developer based out of Saint Paul, Minnesota. Most of his time is spent working as a manager in a restaurant, but would like to move on to something else someday soon. In his spare time he likes playing guitar, riding bikes and listening to music; one day, he will actually have time to do these things.<br><br>';
         text += 'Recently, Erik enrolled in the UMN Code Bootcamp for Web Development! Although he has previously dabbled in coding with Python and HTML, he still has a lot to learn! He is currently learning to program in CSS, and Javascript with more to come soon!<br><br>';
         text += 'Eventually, Erik would like to use these skills to develop web pages and applications and maybe even get paid for it!';
+        var linkedIn = $('<a href = \'https://www.linkedin.com/in/erik-jackson-84407360\'><button class = \'li-link btn btn-primary\'><img class = \'li-btn img-fluid\'src = \'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png\'> </button></a>');
+        var gitHub = $('<a href = \'https://github.com/e-g-jackson\'><button class = \'li-link btn btn-primary\'><img class = \'li-btn img-fluid\' src = assets/imgs/GH-Mark.png></button></a>');
+        
+        // var linkedIn = $('<div class = \'col-2\'></div><a href = \'https://www.linkedin.com/in/erik-jackson-84407360\'><button class = \'col-3 btn btn-primary\'><img class = \'li-btn\'src = \'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png\'> </button></a>');
+        // var gitHub = $('<a href = \'https://github.com/e-g-jackson\'><button class = \'col-3 btn btn-primary\'><img class = \'li-btn\' src = assets/imgs/GH-Mark.png></button></a><div class = \'col-2\'></div>');
+        var container = $('<div class = \'container\'></div>')
         $(mainDiv).append(profHeader);
         $(mainDiv).append(imgDiv);
         $(imgDiv).append(img);
+        $(container).append(linkedIn);
+        $(container).append(gitHub);
+        $(imgDiv).append(container);
         $(mainDiv).append(text);
     },
     portfolio: function(){
