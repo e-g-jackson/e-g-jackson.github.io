@@ -2,7 +2,7 @@ var mainDiv = $('#mainDiv');
 var portfolioItems = [
     {'title': 'Our House!',
     'url': 'https://e-g-jackson.github.io/Our_House/',
-    'repoUrl': 'https://github.com/e-g-jackson/Our_House.git',
+    'repoUrl': 'https://github.com/e-g-jackson/Our_House',
     'img':'assets/imgs/ourhouse.JPG',
     'text':'References the Google Civic API for information on local representatives. Also references the Google Geocoder API and Google Maps API to render the location of representatives\' offices.',
     },{'title': 'GGtrivia',
@@ -10,28 +10,32 @@ var portfolioItems = [
     'repoUrl': 'https://github.com/e-g-jackson/GG_Trivia',
     'img': 'assets/imgs/GGTrivia.JPG',
     'text': 'A Trivia game that uses Sequelize to store and retrieve data from a database. This data includes a question bank, a leaderboard, and a submitted questions table for user-submitted questions pending approval.'
-    },
-    {'title': 'Batman RPG' ,
+    },{'title': 'MongoScraper',
+    'url': 'https://stormy-mesa-78779.herokuapp.com/',
+    'repoUrl': 'https://github.com/e-g-jackson/HW-MongoScraper',
+    'img': 'assets/imgs/MongoScraper.JPG',
+    'text': 'Scrapes NYTimes using Cherio and Axios and stores data in with MongoDB and Mongoose.'
+    },{'title': 'Batman RPG' ,
     'url': 'https://e-g-jackson.github.io/HW-unit-4-game/',
-    'repoUrl': 'https://github.com/e-g-jackson/HW-unit-4-game.git',
+    'repoUrl': 'https://github.com/e-g-jackson/HW-unit-4-game',
     'img':'assets/imgs/batmanrpg.JPG',
     'text':'An RPG set in the DC universe! Pick your favorite hero (or villain!) and decide who rules the streets of Gotham city once and for all!',
     },
     {'title': 'GifTastic',
     'url':'https://e-g-jackson.github.io/HW-GifTastic/',
-    'repoUrl': 'https://github.com/e-g-jackson/HW-GifTastic.git',
+    'repoUrl': 'https://github.com/e-g-jackson/HW-GifTastic',
     'img':'assets/imgs/giftastic.JPG',
     'text':'This site references the Giphy API for gifs based on keyword searches activated by buttons. New buttons can be created using the search bar and button.',
     },
     {'title': 'Word Guess Game',
     'url': 'https://e-g-jackson.github.io/HW-Word_Guess_Game/',
-    'repoUrl': 'https://github.com/e-g-jackson/HW-Word_Guess_Game.git',
+    'repoUrl': 'https://github.com/e-g-jackson/HW-Word_Guess_Game',
     'img': 'assets/imgs/wordguessgame.JPG',
     'text':'Hangman-style letter guessing game with an Architecture theme! How well do you know the top architects of the 20th century? Find out here!',
     },
     {'title': 'Trivia Game',
     'url': 'https://e-g-jackson.github.io/HW-Trivia-Game/',
-    'repoUrl': 'https://github.com/e-g-jackson/HW-Trivia-Game.git',
+    'repoUrl': 'https://github.com/e-g-jackson/HW-Trivia-Game',
     'img': 'assets/imgs/triviagame.JPG',
     'text':'Trivia game set in the Game of Thrones universe! Find out how well you can match the sigils of the great houses to their owners! Be careful, there is a time-limit!',
     }
@@ -134,6 +138,7 @@ $(document).on('click', '.titleBtn', function(){
         $(textBox).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
             $(textBox).removeClass('animated fadeOutDown');
         });
+        
         setTimeout(function(){
             $(textBox).empty();
         }, 1000);
@@ -142,7 +147,7 @@ $(document).on('click', '.titleBtn', function(){
         var text = $('<div id = "text' + iVal + '" class = \'portInfo\'></div>');
         var description = $('<p>' + portfolioItems[iVal].text + '</p>');
         var url = $('<p>URL: <a href = \'' + portfolioItems[iVal].url + '\'>' + portfolioItems[iVal].url + '</a></p>');
-        var rUrl = $('<p>Repo: <a href = \'' + portfolioItems[iVal].rUrl + '\'>' + portfolioItems[iVal].repoUrl +'</p>');
+        var rUrl = $('<p>Repo: <a href = \'' + portfolioItems[iVal].repoUrl + '\'>' + portfolioItems[iVal].repoUrl +'</p>');
         var img = $('<img id = "img' + iVal + '"class = \'portImg\' src = ' + portfolioItems[iVal].img + '>');
 
         $(this).attr('vis', 1); 
@@ -157,6 +162,7 @@ $(document).on('click', '.titleBtn', function(){
         $(img).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
             $(img).removeClass('animated fadeInUp');
         });
+
         $(text).one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
             $(text).removeClass('animated fadeInUp');
         });
