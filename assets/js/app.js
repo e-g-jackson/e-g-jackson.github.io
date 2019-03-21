@@ -15,6 +15,11 @@ var portfolioItems = [
     'repoUrl': 'https://github.com/e-g-jackson/HW-MongoScraper',
     'img': 'assets/imgs/MongoScraper.JPG',
     'text': 'Scrapes NYTimes using Cherio and Axios and stores data in with MongoDB and Mongoose.'
+    },{'title': 'The Tranzpozer App',
+    'url': 'https://tranzpozer.herokuapp.com/',
+    'repoUrl': 'https://github.com/e-g-jackson/Tranzpozer',
+    'img':'assets/imgs/tranzpozer.JPG',
+    'text':'App will accept a key and scale from the user, then return a table with every note of that scale in the selected key. Additionally, the app will render a diagram of a guitar fret and plot the locations of each of the notes.',
     },{'title': 'The Clicky Memory Game' ,
     'url': 'https://theclickymemorygame.herokuapp.com/',
     'repoUrl': 'https://github.com/e-g-jackson/HW-ClickyGame',
