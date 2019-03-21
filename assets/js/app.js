@@ -1,10 +1,10 @@
 var mainDiv = $('#mainDiv');
 var portfolioItems = [
-    {'title': 'Our House!',
-    'url': 'https://e-g-jackson.github.io/Our_House/',
-    'repoUrl': 'https://github.com/e-g-jackson/Our_House',
-    'img':'assets/imgs/ourhouse.JPG',
-    'text':'References the Google Civic API for information on local representatives. Also references the Google Geocoder API and Google Maps API to render the location of representatives\' offices.',
+    {'title': 'The Wellness Tracker App',
+    'url': 'https://wellness-tracker-app.herokuapp.com',
+    'repoUrl': 'https://github.com/e-g-jackson/WellnessTracker',
+    'img':'assets/imgs/wellnesstracker.JPG',
+    'text':'This MERN stack App allows users to save and track data about their weight over time and food consumption. Also allows users to search for recipe data and save it for later through the food2fork API.',
     },{'title': 'GGtrivia',
     'url': 'https://guarded-crag-98032.herokuapp.com/',
     'repoUrl': 'https://github.com/e-g-jackson/GG_Trivia',
@@ -25,8 +25,7 @@ var portfolioItems = [
     'repoUrl': 'https://github.com/e-g-jackson/HW-unit-4-game',
     'img':'assets/imgs/batmanrpg.JPG',
     'text':'An RPG set in the DC universe! Pick your favorite hero (or villain!) and decide who rules the streets of Gotham city once and for all!',
-    },
-    {'title': 'GifTastic',
+    },{'title': 'GifTastic',
     'url':'https://e-g-jackson.github.io/HW-GifTastic/',
     'repoUrl': 'https://github.com/e-g-jackson/HW-GifTastic',
     'img':'assets/imgs/giftastic.JPG',
@@ -43,6 +42,14 @@ var portfolioItems = [
     'text':'Trivia game set in the Game of Thrones universe! Find out how well you can match the sigils of the great houses to their owners! Be careful, there is a time-limit!',
     }
 ];
+
+
+// {'title': 'Our House!',
+//     'url': 'https://e-g-jackson.github.io/Our_House/',
+//     'repoUrl': 'https://github.com/e-g-jackson/Our_House',
+//     'img':'assets/imgs/ourhouse.JPG',
+//     'text':'References the Google Civic API for information on local representatives. Also references the Google Geocoder API and Google Maps API to render the location of representatives\' offices.',
+//     }
 
 var display = {
     profile: function(){
